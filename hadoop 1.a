@@ -1,0 +1,79 @@
+1. What constitutes to Big Data?
+a.volume
+b.velocity
+c.variety
+
+2. Solution Identified to handle Big Data is?
+a.Hadoop
+b.storm
+c.spark
+
+
+3. Doug cutting added DFS &MapReduce support to:
+a)Nutch
+b)spark
+c)GFS
+d)facebook
+4.Which file system is followed by Hadoop?
+a.DFS
+b.GFS
+c.HDFS
+d.NTFS
+5.How much data can be taken as a BigData in regards to volume?
+a.Mega Bytes
+b.Terabytes
+c.Petabytes
+d. b & c
+6 .Hadoop can process data in Real time?
+a.Yes
+b.No
+c.None of these
+7 .Hadoop is developed using?
+a. C
+b. C++
+c. Java
+d. Ruby
+Big Data Developer
+A C A D G I L D Page 5
+8 .Hadoop reduces cost of operations by?
+a. using commodity Hardware
+b. Using less number of nodes
+c. Limited cluster size
+d. None of these
+9 .Search engine adopted in Hadoop is?
+a.Google
+b.yahoo
+c.Solr
+c.AOL
+10. Stream processing can be achieved in Hadoop using?
+a.Storm
+b.Spark
+c.Both of these
+d.None of these
+11 What is the highest data unit we have at present?
+a. petabyte
+b. exabyte
+c. terabyte
+d. Brontobyte
+Big Data Developer
+A C A D G I L D Page 6
+12.Hadoop is well suitable for clusters where
+a. Number of nodes keep changing
+b. Number of nodes are constant
+c. Most number of free nodes
+d. None of these
+13 .what is batch processing?
+a.processing of previously collected jobs in a single batch.
+b.processing of previously collected jobs in different batches.
+c.processing of jobs at that moment they are collcted
+d.None of these
+14 .what is stream processing?
+a. Processing data as streams
+b. Processing data in batches
+c. Both of these
+d. None of these
+15 .Hadoop uses?
+a. Batch processing
+b. Near Real time processing
+c. Real time processing
+d. All the above
