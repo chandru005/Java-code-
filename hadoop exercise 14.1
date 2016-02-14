@@ -1,11 +1,22 @@
 1. When Hive is best suited and when is it not?
-
-
+    Hive is for structured data . Pig is for unstructered data
+    Pig allows one to load data and user code at any point in the pipeline.
+    Hive, which is RDBMS based, needs the data to be first imported (or loaded) and after that it can be worked upon
 
 2. When should one use Hive over MapReduce?
+       Hive is better suited for ad-hoc queries, but its main advantage is that it has engine that stores and partitions data.
+       But its tables can be read from PIG or Standard MapReduce.
+
 3. What is Hive metastore?
+The Hive metastore service stores the metadata for Hive tables and partitions in a relational database, 
+and provides clients (including Hive) access to this information via the metastore service API
+
+
 4. How can Hive improve performance with orc file format tables?
+
+
 5. What is thrift server and client, jdbc and odbc driver importance in hive?
+
 6. What is the importance of partition in hive?
 7. What is the use of bucketing in hive?
 8. What is the difference between static partitioning and dynamic partitioning in hive? 
