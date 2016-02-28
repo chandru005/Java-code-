@@ -26,8 +26,21 @@ HBase provides you with the following:
 1)we should have milions or billions of rows and columns in table at that point only we have use Hbase otherwise better to go RDBMS(we have use thousand of rows and columns)
 2)In RDBMS should runs on single database server but in hbase is distributed and scalable and also run on commodity hardware.
 3) typed columns, secondary indexes, transactions, advanced query languages, etc these features provided by Hbase,not by RDBMS
+
 5. What are the different modes in which Hbase can be run?
+get,put,scan,delete
+
 6. Why is zookeeper needed in Hbase?
+     HBase utilizes Zookeeper(a distributed coordination service) to manage region assignments to region servers, and to recover from 
+     region server crashes by loading the crashed region server’s regions onto other functioning region servers.
+ 
  8 Hbase is a schema less database, what does it mean?
+ What this really means is that the "schema" is stored with the record, not the table. In a RDBMS, the schema is defined and that table has the schema. 
+ In HBase (and other BigTable implementations) data is labeled with its types.
+ 
  9 What is the minimum number of column family every Hbase table should have?
+           one will be the default.
+           
  10 What is the benefit of using connection pool in Hbase?
+ In general, the important thing to know is that Connections are "heavy" objects that are expensive to create, but thread-safe. Table, Admin, and BufferedMutatator objects are lightweight and 
+ not necessarily thread-safe. Connection objects don't necessarily translate to a single "connection", and can multiplex behind the scenes. Better to think of it as a factory.
