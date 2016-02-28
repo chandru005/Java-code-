@@ -1,0 +1,12 @@
+1. What is the difference between memstore and hfile in HBase
+The main reason for using Memstore is the need to store data on DFS ordered by row key. As HDFS is designed for sequential reads/writes, with no file modifications allowed, HBase cannot efficiently write data to disk as it is being received: 
+the written data will not be sorted (when the input is not sorted) which means not optimized for future retrieval.
+
+
+2. Describe compactions in HBase.
+3. List and explain the logical entities in HBase.
+4. What will happen if we do not create a row key while inserting the data?
+5. How can filters be applied in HBase and what are the benefits?
+6. What are the data model operations in hBase?
+7. How can MapReduce be used with HBase?
+8. What is regionserver?
