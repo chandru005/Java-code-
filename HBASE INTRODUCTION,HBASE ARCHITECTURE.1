@@ -1,0 +1,33 @@
+1. Give a brief difference between HBASE and HDFS.
+                  HDFS is a distributed file system and has the following properties:
+1. It is optimized for streaming access of large files. You would typically store files that are in the 100s of MB upwards on HDFS and access them through MapReduce to process them in batch mode. 
+2. HDFS files are write once files. You can append to files in some of the recent versions but that is not a feature that is very commonly used. Consider HDFS files as write-once and read-many files. There is no concept of random writes.
+3. HDFS doesn't do random reads very well.
+HBase on the other hand is a database that stores it's data in a distributed filesystem. The filesystem of choice typically is HDFS owing to the tight integration between HBase and HDFS. Having said that, it doesn't mean that HBase can't work on any other filesystem. It's just not proven in production and at scale to work with anything except HDFS.
+HBase provides you with the following:
+1. Low latency access to small amounts of data from within a large data set. You can access single rows quickly from a billion row table.
+2. Flexible data model to work with and data is indexed by the row key.
+3. Fast scans across tables.
+4. Scale in terms of writes as well as total volume of data.
+
+2. List the main components of HBASE.
+  Zookeeper
+  Catalog Tables
+  Master
+  RegionServer
+  Region
+
+3. Does Hbase support sql?
+   Not really. SQL-is support for HBase via Hive is in development, 
+   however Hive is based on MapReduce which is not generally suitable for low-latency requests. 
+   By using Apache Phoenix  can retrieve data from HBase by using SQL queries.
+   
+4. When should we use HBASE, list some of the scenarios for the same.
+1)we should have milions or billions of rows and columns in table at that point only we have use Hbase otherwise better to go RDBMS(we have use thousand of rows and columns)
+2)In RDBMS should runs on single database server but in hbase is distributed and scalable and also run on commodity hardware.
+3) typed columns, secondary indexes, transactions, advanced query languages, etc these features provided by Hbase,not by RDBMS
+5. What are the different modes in which Hbase can be run?
+6. Why is zookeeper needed in Hbase?
+ 8 Hbase is a schema less database, what does it mean?
+ 9 What is the minimum number of column family every Hbase table should have?
+ 10 What is the benefit of using connection pool in Hbase?
