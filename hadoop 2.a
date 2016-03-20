@@ -1,0 +1,35 @@
+1. Concept used in Hadoop is:
+b. Map and Reduce
+
+2. Hadoop divides data into:
+d. All the above
+
+3. Each node results are stored in:
+a. HDFS
+ 
+4. Which of these can be related to Hadoop 1.x?
+b. Job process, Task process, Name cluster
+
+12. Who is the Master in Hadoop?
+d. All the above
+
+5. Who are the job trackers in Hadoop?
+c. Both of these
+
+6. Which node stores the metadata?
+a. NameNode
+
+7. Which is not a valid Daemon in Hadoop?
+c. Checkpoint Node
+
+8. By default, memory size of Data nodes is limited to?
+b. 64MB
+
+9. Slave layer in Hadoop Architecture contains:
+b. Data nodes & Node Manager
+
+10. Data is replicated among:
+a. Name nodes
+b. Data nodes
+c. Both of these
+d. None of these
